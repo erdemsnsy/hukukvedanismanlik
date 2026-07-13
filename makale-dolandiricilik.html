@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolandırıcılık Suçu - Şensoy Hukuk ve Danışmanlık</title>
+    <meta name="description" content="Dolandırıcılık suçu unsurları, basit ve nitelikli dolandırıcılık durumları, TCK hükümleri ve Yargıtay kararları.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo-statue.png">
+    <style>
+        .article-hero {
+            padding: 160px 0 60px;
+            background: linear-gradient(180deg, rgba(18, 18, 26, 0.8) 0%, rgba(10, 10, 15, 1) 100%);
+            border-bottom: 1px solid var(--dark-border);
+            position: relative;
+        }
+        .article-meta {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--gold-light);
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .article-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            color: var(--white);
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+        .article-details-section {
+            padding: 80px 0 120px;
+            background: var(--dark);
+        }
+        .article-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .article-featured-img {
+            width: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--dark-border);
+            margin-bottom: 48px;
+            box-shadow: var(--shadow-card);
+        }
+        .article-featured-img img {
+            width: 100%;
+            display: block;
+        }
+        .article-body {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text);
+        }
+        .article-body p {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+        .article-body h2, .article-body h3, .article-body h4 {
+            font-family: var(--font-display);
+            color: var(--gold-light);
+            margin: 36px 0 20px;
+            line-height: 1.3;
+        }
+        .article-body h2 { font-size: 1.6rem; border-bottom: 1px solid var(--dark-border); padding-bottom: 12px; }
+        .article-body h3 { font-size: 1.35rem; }
+        .article-body h4 { font-size: 1.2rem; }
+        
+        .article-body ul, .article-body ol {
+            margin-bottom: 24px;
+            padding-left: 20px;
+        }
+        .article-body li {
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+        .example-box {
+            background: rgba(201, 169, 110, 0.04);
+            border-left: 3px solid var(--gold);
+            border-radius: 4px 12px 12px 4px;
+            padding: 20px;
+            margin: 24px 0;
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .example-box strong {
+            color: var(--gold-light);
+            font-style: normal;
+            display: block;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        .yargitay-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--dark-border);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            font-family: var(--font-elegant);
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+        }
+        .yargitay-box strong {
+            color: var(--gold-light);
+            display: block;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .court-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--dark-border);
+            background: rgba(255, 255, 255, 0.01);
+        }
+        .court-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--dark-border);
+            font-size: 0.9rem;
+        }
+        .court-table tr:last-child td {
+            border-bottom: none;
+        }
+        .court-table td:first-child {
+            background: rgba(201, 169, 110, 0.04);
+            font-weight: 600;
+            color: var(--gold-light);
+            width: 35%;
+        }
+        .court-table td:last-child {
+            color: var(--text-muted);
+        }
+        .related-articles {
+            border-top: 1px solid var(--dark-border);
+            padding-top: 60px;
+            margin-top: 80px;
+        }
+        .related-title {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 32px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        .related-card {
+            background: var(--gradient-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: var(--transition);
+        }
+        .related-card:hover {
+            border-color: rgba(201, 169, 110, 0.25);
+            transform: translateY(-4px);
+        }
+        .related-card h4 {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+        .related-card a {
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img class="logo-icon" src="logo-statue.png" alt="Şensoy Hukuk Logo" style="height: 42px; width: auto; object-fit: contain;">
+                <div class="logo-text">
+                    <span class="logo-main">ŞENSOY</span>
+                    <span class="logo-sub">HUKUK & DANIŞMANLIK</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#anasayfa" class="nav-link">Ana Sayfa</a>
+                <a href="hizmetler.html" class="nav-link">Hizmetlerimiz</a>
+                <a href="hesaplama.html" class="nav-link">Hesaplama Araçları</a>
+                <a href="index.html#alanlar" class="nav-link">Çalışma Alanları</a>
+                <a href="makaleler.html" class="nav-link active">Makalelerimiz</a>
+                <a href="dilekce.html" class="nav-link">Dilekçe Sihirbazı</a>
+                <a href="index.html#iletisim" class="nav-link">İletişim</a>
+            </div>
+            <div class="nav-actions">
+                <button class="hamburger" id="hamburger" aria-label="Menü">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="container">
+            <div class="article-meta">
+                <span>Kategori: Ceza Hukuku</span>
+                <span>•</span>
+                <span>Eylül 2024</span>
+            </div>
+            <h1 class="article-title">Dolandırıcılık Suçu</h1>
+        </div>
+    </section>
+
+    <!-- Article Detail Content -->
+    <section class="article-details-section">
+        <div class="container">
+            <div class="article-wrapper">
+                <div class="article-featured-img" data-animate>
+                    <img src="https://referanshukuk.com/wp-content/uploads/2024/09/kisi-sahis-giyim-tasit-arac-araba-iceren-bir.jpeg" alt="Dolandırıcılık Suçu">
+                </div>
+
+                <!-- Modern Two-Column Layout -->
+                <div class="article-grid">
+                    
+                    <!-- Left Column: Content with Interactive Accordions -->
+                    <div class="article-main-col" data-animate>
+                        
+                        <!-- TL;DR Card -->
+                        <div class="tldr-card">
+                            <div class="tldr-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <span>Suç Unsurları ve Hukuki Özet</span>
+                            </div>
+                            <ul class="tldr-list">
+                                <li>Dolandırıcılık suçu, failin mağduru kasten yanıltarak onun iradesini sakatlaması ile oluşur.</li>
+                                <li>Bilişim sistemlerinin (internet, e-ticaret vb.) veya bankaların aracı kılınması nitelikli hal sayılır ve cezayı artırır.</li>
+                                <li>Nitelikli dolandırıcılık davaları Ağır Ceza Mahkemesi'nde görülür ve resen (şikayet olmaksızın) soruşturulur.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Accordion Items -->
+                        <div class="article-accordion">
+                            
+                            <!-- Section 1 -->
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <div class="accordion-header-title">
+                                        <div class="accordion-icon-wrap">⚖️</div>
+                                        <span>Basit Dolandırıcılık Suçu (TCK Madde 157)</span>
+                                    </div>
+                                    <div class="accordion-trigger">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="article-body">
+                                        <p>Hukuk sistemimizde haksız kazanç sağlamaya yönelik suçlardan biri olan dolandırıcılıkta, failin mağduru kasten yanıltması gerekir. Bu suçu oluşturan en temel unsur, mağdurun iradesinin hileli davranışlarla sakatlanmasıdır.</p>
+                                        <p><strong>TCK Madde 157:</strong> Hileli davranışlarla bir kişiyi aldatarak, onun veya başkasının zararına olarak, kendisine veya başkasına bir yarar sağlayan kişiye bir yıldan beş yıla kadar hapis ve beşbin güne kadar adli para cezası verilir.</p>
+                                        
+                                        <div class="example-box">
+                                            <strong>Basit Dolandırıcılık Örneği</strong>
+                                            Bir arkadaştan orijinal olduğu belirtilen bir telefonu yüz yüze satın alırsınız, ancak ürün sahte çıkar.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2 -->
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="accordion-header-title">
+                                        <div class="accordion-icon-wrap">🚨</div>
+                                        <span>Nitelikli Dolandırıcılık Halleri (TCK Madde 158)</span>
+                                    </div>
+                                    <div class="accordion-trigger">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="article-body">
+                                        <p>Dolandırıcılık suçunun bazı durumlarda daha ağır ceza gerektiren şekillerde işlenmesi "nitelikli dolandırıcılık" olarak kabul edilir. Bu haller şunlardır:</p>
+                                        <ol>
+                                            <li>Dinî inanç ve duyguların istismarı suretiyle,</li>
+                                            <li>Kişinin içinde bulunduğu tehlikeli durum veya zor şartlardan yararlanarak,</li>
+                                            <li>Kişinin algılama yeteneğinin zayıflığından yararlanarak,</li>
+                                            <li>Kamu kurum ve kuruluşlarının, kamu meslek kuruluşlarının araç olarak kullanılması suretiyle,</li>
+                                            <li>Bilişim sistemlerinin, banka veya kredi kurumlarının araç olarak kullanılması suretiyle,</li>
+                                            <li>Basın ve yayın araçlarının sağladığı kolaylıktan yararlanarak,</li>
+                                            <li>Tacir veya şirket yöneticisi olan kişilerin ticari faaliyetleri sırasında; kooperatif yöneticilerinin kooperatifin faaliyeti kapsamında,</li>
+                                            <li>Serbest meslek sahibi kişiler tarafından, mesleklerine duyulan güvenin kötüye kullanılması suretiyle,</li>
+                                            <li>Banka veya diğer kredi kurumlarınca tahsis edilmemesi gereken bir kredinin açılmasını sağlamak maksadıyla,</li>
+                                            <li>Sigorta bedelini almak maksadıyla,</li>
+                                            <li>Kendisini kamu görevlisi veya banka, sigorta ya da kredi kurumlarının çalışanı olarak tanıtması veya bu kurumlarla ilişkili olduğunu söylemesi suretiyle.</li>
+                                        </ol>
+
+                                        <div class="example-box">
+                                            <strong>Nitelikli Dolandırıcılık Örneği</strong>
+                                            Bir internet sitesinden (bilişim sistemi kullanılarak) orijinal olduğu belirtilen bir markanın telefonunu satın alırsınız, ancak kargo ile gelen ürün sahte çıkar.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 3 -->
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="accordion-header-title">
+                                        <div class="accordion-icon-wrap">🔍</div>
+                                        <span>Suçun Temel Unsurları ve Hafifletici Nedenler</span>
+                                    </div>
+                                    <div class="accordion-trigger">+</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="article-body">
+                                        <p>Suçun oluşması için yargılamada aşağıdaki dört temel öğe incelenir:</p>
+                                        <ul>
+                                            <li><strong>Hile:</strong> Mağduru yanıltabilecek nitelikte, yoğunlukta ve ustalıkta sergilenen kasıtlı ve nitelikli yalanlardır.</li>
+                                            <li><strong>Aldatma:</strong> Hileli davranışlar sonucunda mağdurun hataya düşmesi ve aldatılmış olması gerekir.</li>
+                                            <li><strong>Zarar:</strong> Yapılan eylem neticesinde mağdurun malvarlığında azalma/zarar meydana gelmelidir.</li>
+                                            <li><strong>Yarar Sağlama:</strong> Failin veya üçüncü bir kişinin bu hile ve aldatma sonucunda haksız bir yarar elde etmesi şarttır.</li>
+                                        </ul>
+
+                                        <h3>Hukuki İlişkiye Dayalı Alacak Tahsili (TCK Madde 159)</h3>
+                                        <p>Dolandırıcılık suçu, bir hukuki ilişkiye dayanan bir alacağı tahsil amacıyla işlenmişse, ceza altı aydan bir yıla kadar hapis veya adli para cezası olarak belirlenir. Bu tür durumlarda ceza verilmesi için mağdurun şikâyeti gereklidir.</p>
+                                        
+                                        <div class="example-box">
+                                            <strong>Örnek</strong>
+                                            Bir kişinin kendi yasal alacağını borçludan tahsil etmek maksadıyla borçluyu kandırarak tahsilat yapması hali.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Örnek Yargıtay Kararları</h2>
+                        <div class="yargitay-box">
+                            <strong>Yargıtay 15. Ceza Dairesi - E. 2017/16855, K. 2019/2559</strong>
+                            "Sanığın sahte bileziklerden birisini müştekinin kuyumcu dükkanında satarak nakit para aldığı, başka bir kuyumcuya gittiğinde ise sahteliğin anlaşıldığı olayda; sanığın kendisini sahte isimle tanıtması ve kolluk çağrılınca kaçması dolandırıcılık kastını net şekilde ortaya koymaktadır. Sanığın dolandırıcılık ve dolandırıcılığa teşebbüs suçlarından mahkumiyeti yerine beraat kararı verilmesi kanuna aykırıdır."
+                        </div>
+
+                        <div class="yargitay-box">
+                            <strong>Yargıtay 15. Ceza Dairesi - E. 2015/4088, K. 2018/3058</strong>
+                            "Sanıkların gerçekte hazineye ait olan arsaları satabileceklerini ve tapu işlemlerini halledebileceklerini söyleyerek müştekiyi ikna ettikleri, resmi kurum başlığı taşıyan sahte belgeler fakslandığı olayda; hileli davranışların yoğunluğu ve kamu kurumu belgesi kullanılması sebebiyle nitelikli dolandırıcılık suçunun oluştuğuna dair mahkeme kararı yerindedir."
+                        </div>
+
+                        <div class="example-box">
+                            <strong>Önemli Uyarı</strong>
+                            Yazılı bilgiler güncellenen mevzuatlar çerçevesinde değişebilir. Değişen koşullar ve davaların kendine özgü durumları sebebiyle hukuki uyuşmazlıklar için profesyonel bir destek alınmasını öneriyoruz. Davanızla ilgili hukuki sürecin yürütülmesi için avukatlık hizmetimize başvurabilirsiniz. Yazılı bilgiler sebebiyle herhangi bir sorumluluk kabul edilmemektedir.
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Sidebar -->
+                    <div class="article-sidebar" data-animate>
+                        
+                        <!-- Contact Card -->
+                        <div class="sidebar-cta-card">
+                            <h3 class="sidebar-cta-title">Hukuki Danışmanlık</h3>
+                            <p class="sidebar-cta-desc">Dolandırıcılık mağduru olduysanız veya bir ceza davasıyla karşı karşıyaysanız, acil hukuki destek için bizimle hemen iletişime geçebilirsiniz.</p>
+                            <a href="https://wa.me/905468650875?text=Merhabalar%2C%20dolandiricilik%20sucu%20konusunda%20bilgi%20almak%20istiyorum." target="_blank" class="btn btn-gold" style="width: 100%; justify-content: center; gap: 8px;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.05-4.48c1.661.988 3.284 1.48 4.905 1.482 5.373 0 9.743-4.361 9.745-9.723.002-2.597-1.002-5.04-2.827-6.867C16.108 2.585 13.684 1.58 11.1 1.58 5.725 1.58 1.358 5.942 1.356 11.306c-.001 1.7.464 3.324 1.385 4.838l-.946 3.454 3.262-.878z"/></svg>
+                                <span>WhatsApp'tan Yazın</span>
+                            </a>
+                        </div>
+
+                        <!-- Table -->
+                        <div class="sidebar-table-wrap">
+                            <h4 style="font-family: var(--font-display); color: var(--gold-light); margin-bottom: 12px; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+                                <span>🏛️</span> Görev ve Süreler
+                            </h4>
+                            <table class="court-table">
+                                <tr>
+                                    <td>Görevli Mahkeme</td>
+                                    <td>Basit: Asliye Ceza<br>Nitelikli: Ağır Ceza</td>
+                                </tr>
+                                <tr>
+                                    <td>Şikayet Süresi</td>
+                                    <td>Şikayete tabi değildir (Resen soruşturulur). Alacak tahsilinde 6 ay şikayet süresi vardır.</td>
+                                </tr>
+                                <tr>
+                                    <td>Deliller</td>
+                                    <td>Yazılı belgeler, banka dekontları, WhatsApp yazışmaları, ses/video kayıtları</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Related Articles Section -->
+                <div class="related-articles">
+                    <h3 class="related-title">Diğer Yazılarımız</h3>
+                    <div class="related-grid">
+                        <div class="related-card">
+                            <h4>Fikri Mülkiyet Hukuku</h4>
+                            <a href="makale-fikri-mulkiyet.html">
+                                Okumaya Devam Et
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                        <div class="related-card">
+                            <h4>Evlât Edinme</h4>
+                            <a href="makale-evlat-edinme.html">
+                                Okumaya Devam Et
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <img class="logo-icon" src="logo-statue.png" alt="Şensoy Hukuk Logo" style="height: 36px; width: auto; object-fit: contain;">
+                            <span>Şensoy Hukuk</span>
+                        </a>
+                        <p class="footer-about">Şensoy Hukuk Bürosu olarak, hukuki bilgi ve tecrübelerimizi adalet hizmetine ve kişilerin yararlanmasına sunuyoruz.</p>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Hızlı Erişim</h4>
+                        <ul>
+                            <li><a href="index.html#anasayfa">Ana Sayfa</a></li>
+                            <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+                            <li><a href="dilekce.html">Online Dilekçe Yazdır</a></li>
+                            <li><a href="makaleler.html">Makalelerimiz</a></li>
+                            <li><a href="index.html#iletisim">İletişim</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-group">
+                        <h4>Çalışma Alanları</h4>
+                        <ul>
+                            <li><a href="index.html#alanlar">Aile Hukuku</a></li>
+                            <li><a href="index.html#alanlar">Tüketici Hukuku</a></li>
+                            <li><a href="index.html#alanlar">İcra ve İflas Hukuku</a></li>
+                            <li><a href="index.html#alanlar">Ticaret Hukuku</a></li>
+                            <li><a href="index.html#alanlar">Ceza Hukuku</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>İletişim</h4>
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                            <a href="tel:+905468650875">(+90) 546 865 0875</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="18" height="18" viewBox="0 0 512 512" fill="currentColor"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7z"/></svg>
+                            <a href="mailto:sensoyhukukvedanismanlik@gmail.com">sensoyhukukvedanismanlik@gmail.com</a>
+                        </div>
+                        <div class="footer-socials">
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3.3" fill="currentColor"/><path fill="currentColor" d="M14.2,0H5.8C2.6,0,0,2.6,0,5.8v8.3C0,17.4,2.6,20,5.8,20h8.3c3.2,0,5.8-2.6,5.8-5.8V5.8C20,2.6,17.4,0,14.2,0zM10,15c-2.8,0-5-2.2-5-5s2.2-5,5-5s5,2.2,5,5S12.8,15,10,15z M15.8,5C15.4,5,15,4.6,15,4.2s0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8S16.3,5,15.8,5z"/></svg>
+                            </a>
+                            <a href="mailto:sensoyhukukvedanismanlik@gmail.com" class="social-link" aria-label="Email">
+                                <svg width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" d="M10,10.1L0,4.7C0.1,3.2,1.4,2,3,2h14c1.6,0,2.9,1.2,3,2.8L10,10.1z M10,11.8c-0.1,0-0.2,0-0.4-0.1L0,6.4V15c0,1.7,1.3,3,3,3h4.9h4.3H17c1.7,0,3-1.3,3-3V6.4l-9.6,5.2C10.2,11.7,10.1,11.7,10,11.8z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span class="copyright-year">2026</span> Şensoy Hukuk ve Danışmanlık. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/905468650875?text=Merhabalar%2C%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp-btn" aria-label="WhatsApp ile iletişime geçin">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
