@@ -32,3 +32,8 @@ Projeyi indirdikten sonra `index.html` dosyasını tarayıcıda açabilirsiniz.
 ## ⚠️ Bilgilendirme
 
 Sitede yer alan hukuki içerikler genel bilgilendirme amacıyla hazırlanmıştır ve hukuki danışmanlık yerine geçmez.
+
+## ©️ Telif Hakkı ve Kullanım
+
+© 2026 Erdem Şensoy. Tüm hakları saklıdır.  
+Bu proje yalnızca portföy amacıyla yayımlanmıştır. İzinsiz kopyalanamaz, değiştirilemez veya dağıtılamaz.
